@@ -52,33 +52,13 @@ main {
 }
 main form {
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-main form .field-group {
-  display: flex;
-  gap: 20px;
+main form button {
+  grid-column: 1 /-1;
 }
-main .output {
-}
-section.cards-list {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.card {
-  line-height: 1.8em;
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding-bottom: 20px;
-  border-bottom: solid 1px var(--lighter-grey);
-}
-@media screen and (max-width: 768px) {
-  .card {
-    flex-direction: column;
-  }
+main form label {
+  display: none;
 }
