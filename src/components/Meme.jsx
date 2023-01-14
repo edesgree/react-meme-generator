@@ -8,12 +8,11 @@ function Meme() {
     url: 'http://i.imgflip.com/1bij.jpg'
   });
 
-  const [allMemes, setAllMemes] = React.useState({});
+  const [allMemes, setAllMemes] = React.useState([]);
 
   function getMemeImage() {
-    const memesArray = allMemes;
-    const randomNumber = Math.floor(Math.random() * memesArray.length);
-    const randomUrl = memesArray[randomNumber].url;
+    const randomNumber = Math.floor(Math.random() * allMemes.length);
+    const randomUrl = allMemes[randomNumber].url;
     setMeme((prevData) => ({
       ...prevData,
       url: randomUrl
