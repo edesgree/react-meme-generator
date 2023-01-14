@@ -50,15 +50,48 @@ header .logo {
 main {
   padding: 1em;
 }
-main form {
+main .form {
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-main form button {
+main .form button {
   grid-column: 1 /-1;
 }
-main form label {
+main .form label {
   display: none;
+}
+main .output {
+  text-align: center;
+  position: relative;
+}
+main .output img {
+  max-width: 100%;
+  height: auto;
+}
+main .output span {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+main .output span.text-bottom {
+  bottom: 20px;
+}
+
+main .output span.text-top {
+  top: 20px;
 }
