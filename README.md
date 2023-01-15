@@ -1,4 +1,4 @@
-# react travel journal
+# react meme generator
 
 The project is to build a form that generate a meme with image and text.
 It is bootstraped with Vite.js.
